@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505; /* Deep cinematic black */
+  --foreground: #ffffff;
+  
+  --electric-blue: #0066ff;
+  --electric-blue-hover: #3385ff;
+  --electric-glow: rgba(0, 102, 255, 0.4);
+  
+  --surface: #111111;
+  --surface-dark: #0a0a0a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-electric: var(--electric-blue);
+  --color-electric-hover: var(--electric-blue-hover);
+  --color-surface: var(--surface);
+  --color-surface-dark: var(--surface-dark);
+  
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  background-image: radial-gradient(circle at 50% 0%, rgba(0, 102, 255, 0.08) 0%, transparent 70%);
+}
+
+/* EPIC DESIGN - DEPTH SYSTEM */
+.scene {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Let clicks pass through layers without buttons */
+}
+
+.layer > * {
+  pointer-events: auto; /* Re-enable for actual content */
+}
+
+.depth-0 { z-index: 0; filter: blur(8px); transform: scale(0.7); opacity: 0.3; }
+.depth-1 { z-index: 10; filter: blur(4px); transform: scale(0.85); opacity: 0.6; }
+.depth-2 { z-index: 20; transform: scale(1); }
+.depth-3 { z-index: 30; transform: scale(1.05); }
+.depth-4 { z-index: 40; transform: scale(1); }
+.depth-5 { z-index: 50; transform: scale(1.1); }
+
+/* Utility for text animation */
+.char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .char {
+    opacity: 1;
+    transform: none;
+  }
+}
