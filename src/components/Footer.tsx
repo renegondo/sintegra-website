@@ -3,32 +3,73 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-black py-16 relative z-10">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
-          <div className="flex items-center gap-3">
-            <div className="relative w-40 h-10">
-              <Image 
-                src="/images/new-logo-3.png" 
-                alt="Sintegra Logo" 
-                fill 
-                className="object-contain object-left md:object-center brightness-0 invert" 
-              />
-            </div>
+    <footer className="border-t border-slate-200 bg-slate-50 pt-20 pb-10 relative z-10">
+      <div className="container mx-auto px-4 max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+          
+          {/* Logo and About */}
+          <div className="lg:col-span-2">
+            <Link href="/" className="inline-block mb-6">
+              <div className="relative w-44 h-10">
+                <Image 
+                  src="/images/new-logo-3.png" 
+                  alt="Sintegra Logo" 
+                  fill 
+                  className="object-contain object-left" 
+                />
+              </div>
+            </Link>
+            <p className="text-slate-500 text-sm leading-relaxed max-w-sm mb-6">
+              Sintegra desarrolla sistemas integrales para digitalizar, conectar y supervisar procesos de gobierno. Tecnología que integra. Gobierno que responde.
+            </p>
           </div>
-          <div className="flex gap-8 text-sm font-medium">
-            <Link href="/nosotros" className="text-gray-400 hover:text-white transition-colors">Nuestra Empresa</Link>
-            <Link href="#" className="text-gray-400 hover:text-white transition-colors">Seguridad</Link>
-            <Link href="mailto:contacto@sintegra.com" className="text-gray-400 hover:text-white transition-colors">Soporte Corporativo</Link>
+
+          {/* Columna Sintegra */}
+          <div>
+            <h4 className="font-bold text-slate-900 mb-6">Sintegra</h4>
+            <ul className="space-y-4 text-sm font-medium">
+              <li><Link href="/empresa" className="text-slate-500 hover:text-electric transition-colors">Empresa</Link></li>
+              <li><Link href="/implementacion" className="text-slate-500 hover:text-electric transition-colors">Implementación</Link></li>
+              <li><Link href="/seguridad" className="text-slate-500 hover:text-electric transition-colors">Seguridad</Link></li>
+              <li><Link href="/contacto" className="text-slate-500 hover:text-electric transition-colors">Contacto</Link></li>
+            </ul>
           </div>
+
+          {/* Columna Soluciones */}
+          <div>
+            <h4 className="font-bold text-slate-900 mb-6">Soluciones</h4>
+            <ul className="space-y-4 text-sm font-medium">
+              <li><Link href="/soluciones/tesoreria-municipal" className="text-slate-500 hover:text-electric transition-colors">Sintegra Tesorería</Link></li>
+              <li><Link href="/soluciones/bebot-ayuntamiento" className="text-slate-500 hover:text-electric transition-colors">Bebot Ayuntamiento</Link></li>
+              <li><Link href="/soluciones/desarrollo-a-la-medida" className="text-slate-500 hover:text-electric transition-colors">Desarrollo a la medida</Link></li>
+              <li><Link href="/soluciones/integraciones" className="text-slate-500 hover:text-electric transition-colors">Integraciones</Link></li>
+            </ul>
+          </div>
+
+          {/* Columna Recursos */}
+          <div>
+            <h4 className="font-bold text-slate-900 mb-6">Recursos</h4>
+            <ul className="space-y-4 text-sm font-medium">
+              <li><Link href="/recursos" className="text-slate-500 hover:text-electric transition-colors">Blog</Link></li>
+              <li><Link href="/casos-de-uso" className="text-slate-500 hover:text-electric transition-colors">Casos de uso</Link></li>
+              <li><Link href="/recursos#faq" className="text-slate-500 hover:text-electric transition-colors">Preguntas frecuentes</Link></li>
+              <li><Link href="/acceso" className="text-slate-500 hover:text-electric transition-colors">Soporte y Accesos</Link></li>
+            </ul>
+          </div>
+
         </div>
-        <div className="border-t border-white/5 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-600 text-sm font-medium">
-            &copy; {new Date().getFullYear()} Sintegra Systems. Tecnología que transforma.
+
+        <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="text-slate-400 text-sm">
+            &copy; {new Date().getFullYear()} Sintegra — Sistemas Integrales. Todos los derechos reservados.
           </p>
-          <div className="flex gap-6 mt-4 md:mt-0 text-sm">
-            <a href="#" className="text-gray-600 hover:text-gray-400 transition-colors">Privacidad</a>
-            <a href="#" className="text-gray-600 hover:text-gray-400 transition-colors">Términos</a>
+          
+          {/* Columna Legal */}
+          <div className="flex flex-wrap justify-center gap-6 text-sm">
+            <Link href="/aviso-de-privacidad" className="text-slate-400 hover:text-slate-600 transition-colors">Aviso de privacidad</Link>
+            <Link href="/terminos" className="text-slate-400 hover:text-slate-600 transition-colors">Términos de uso</Link>
+            <Link href="/politica-de-cookies" className="text-slate-400 hover:text-slate-600 transition-colors">Política de cookies</Link>
+            <Link href="/accesibilidad" className="text-slate-400 hover:text-slate-600 transition-colors">Accesibilidad</Link>
           </div>
         </div>
       </div>
