@@ -70,10 +70,6 @@ export const metadata: Metadata = {
     description: "Plataformas web y móviles para conectar la recaudación, la atención ciudadana y la supervisión ejecutiva.",
     images: ["/images/ecosystem-hero.png"],
   },
-  icons: {
-    icon: "/icon.png",
-    apple: "/apple-icon.png", // Se requerirá crear apple-icon.png a futuro si se desea nativo
-  },
 };
 
 export default function RootLayout({
