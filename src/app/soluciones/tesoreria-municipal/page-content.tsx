@@ -234,8 +234,80 @@ export default function TesoreriaPageContent() {
         {/* ─── 6. MOBILE STORY (Animación interactiva del celular) ─── */}
         <MobileStory />
 
+        {/* ─── 6.5. ACCESOS DE PRUEBA ─── */}
+        <section className="py-24 relative z-10 bg-white">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <Reveal>
+              <div className="inline-flex items-center rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1.5 text-sm font-bold tracking-wide text-orange-600 mb-6 shadow-[0_0_20px_rgba(249,115,22,0.1)] uppercase">
+                Entorno de Demostración
+              </div>
+              <h2 className="text-3xl font-bold mb-6 text-slate-900">Explora el sistema de Tesorería</h2>
+              <p className="text-lg text-slate-600 mb-12 max-w-2xl mx-auto">
+                Accede a nuestro entorno de pruebas para conocer de primera mano la interfaz administrativa y el punto de cobro. Los datos se reinician periódicamente.
+              </p>
+            </Reveal>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+              <Reveal delay={0.1}>
+                <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                  <h3 className="font-bold text-xl text-slate-900 mb-4 flex items-center gap-2">
+                    <Building2 className="w-5 h-5 text-electric" />
+                    Panel Administrativo
+                  </h3>
+                  <div className="space-y-4">
+                    <div>
+                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">URL de Acceso</span>
+                      <a href="https://demo.sistemasintegrados.online" target="_blank" rel="noopener noreferrer" className="text-electric hover:underline font-medium">demo.sistemasintegrados.online</a>
+                    </div>
+                    <div>
+                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Usuario (Admin)</span>
+                      <code className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm text-slate-700 block w-fit font-mono">admin@sintegra.com</code>
+                    </div>
+                    <div>
+                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Contraseña</span>
+                      <code className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm text-slate-700 block w-fit font-mono">SintegraDemo123!</code>
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.2}>
+                <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                  <h3 className="font-bold text-xl text-slate-900 mb-4 flex items-center gap-2">
+                    <Smartphone className="w-5 h-5 text-electric" />
+                    Punto de Cobro
+                  </h3>
+                  <div className="space-y-4">
+                    <div>
+                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">URL de Acceso</span>
+                      <a href="https://demo.sistemasintegrados.online" target="_blank" rel="noopener noreferrer" className="text-electric hover:underline font-medium">demo.sistemasintegrados.online</a>
+                    </div>
+                    <div>
+                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Usuario (Cobrador)</span>
+                      <code className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm text-slate-700 block w-fit font-mono">cobrador@sintegra.com</code>
+                    </div>
+                    <div>
+                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Contraseña</span>
+                      <code className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm text-slate-700 block w-fit font-mono">DemoCobrador123!</code>
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+            
+            <Reveal delay={0.3}>
+              <div className="mt-12 bg-amber-50 border border-amber-200 p-4 rounded-xl flex gap-3 text-left">
+                <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                <p className="text-sm text-amber-800">
+                  <strong>Aviso:</strong> Por favor, no introduzcas datos personales reales ni información confidencial. Es un ambiente de prueba público regido por nuestros <Link href="/terminos" className="underline font-bold">Términos de Uso</Link>.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
         {/* ─── 7. FLUJO VISUAL ─── */}
-        <section className="py-24 relative z-10">
+        <section className="py-24 relative z-10 bg-slate-50">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <Reveal>
               <h2 className="text-3xl font-bold mb-16 text-slate-900">Flujo de operación</h2>
