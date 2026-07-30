@@ -33,11 +33,9 @@ export function LegalPageContent({ title, lastUpdated = "Octubre 2026", children
               </p>
             </Reveal>
             
-            <Reveal delay={0.1}>
-              <div className="prose prose-slate prose-lg max-w-none prose-headings:font-bold prose-a:text-electric hover:prose-a:text-electric-hover">
-                {children}
-              </div>
-            </Reveal>
+            <div className="prose prose-slate prose-lg max-w-none prose-headings:font-bold prose-headings:text-slate-900 prose-p:text-slate-600 prose-li:text-slate-600 prose-a:text-electric hover:prose-a:text-electric-hover prose-h2:mt-12 prose-h2:mb-6 prose-h2:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-h3:text-xl">
+              {children}
+            </div>
           </div>
         </section>
       </main>

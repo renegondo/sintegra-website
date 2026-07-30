@@ -125,7 +125,6 @@ export default function Header() {
 
           <Link href="/implementacion" className="text-sm font-medium text-slate-600 hover:text-electric transition-colors">Implementación</Link>
           <Link href="/seguridad" className="text-sm font-medium text-slate-600 hover:text-electric transition-colors">Seguridad</Link>
-          <Link href="/recursos" className="text-sm font-medium text-slate-600 hover:text-electric transition-colors">Recursos</Link>
           <Link href="/contacto" className="text-sm font-medium text-slate-600 hover:text-electric transition-colors">Contacto</Link>
         </nav>
 

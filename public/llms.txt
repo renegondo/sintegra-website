@@ -1,0 +1,43 @@
+# Sintegra Sistemas Integrales
+
+## Descripción de la Empresa
+Sintegra (Sistemas Integrales) es una empresa de tecnología y desarrollo de software especializada en la creación de ecosistemas digitales para gobiernos, municipios e instituciones públicas. Su propuesta de valor central se resume en el eslogan: "Tecnología que integra. Gobierno que responde."
+
+El problema que Sintegra resuelve es la opacidad, la lentitud y la ineficiencia causada por la dispersión de datos y el uso de papel en las dependencias de gobierno. Al unificar los procesos en un solo ecosistema digital, Sintegra permite una supervisión ejecutiva en tiempo real, aumenta la recaudación fiscal, agiliza la atención ciudadana y facilita el trabajo del personal operativo.
+
+## Soluciones y Productos Principales
+
+### Sintegra Tesorería Municipal
+Una plataforma robusta para la gestión y digitalización de ingresos. 
+- Permite la emisión de recibos digitales tanto en ventanilla (vía web) como en campo (vía aplicación móvil Android para cobratarios o inspectores).
+- Los ciudadanos pueden validar la autenticidad de sus recibos escaneando un código QR que los lleva a un portal oficial, combatiendo así la corrupción y los recibos apócrifos.
+- Incluye un dashboard administrativo ("Command Center") para que alcaldes y tesoreros moniteen el flujo de efectivo en tiempo real.
+
+### Bebot Ayuntamiento
+Un asistente virtual de atención ciudadana (chatbot) omnicanal diseñado para automatizar y mejorar el servicio al contribuyente.
+- Responde dudas frecuentes sobre trámites, impuestos y servicios 24/7.
+- Canaliza reportes ciudadanos y quejas al departamento correspondiente.
+- Optimiza los tiempos de respuesta del personal de atención ciudadana (Call Centers o mesas de ayuda gubernamentales).
+
+### Integraciones y Desarrollo a la Medida
+Sintegra no impone sistemas genéricos. Especialistas en comprender la operatividad interna de cada municipio, el equipo es capaz de desarrollar módulos a la medida o integrar sus plataformas con sistemas heredados existentes.
+- Conexión mediante APIs seguras.
+- Desarrollo de interfaces personalizadas.
+- Consultoría para la migración de datos.
+
+## Infraestructura y Seguridad
+- Las plataformas operan en la nube bajo arquitecturas modernas y escalables.
+- Se implementan múltiples capas de seguridad y cifrado para proteger la información gubernamental sensible.
+- Acceso basado en roles y trazabilidad de acciones (registros de auditoría) para asegurar la transparencia.
+
+## Audiencia
+La audiencia principal de Sintegra son:
+- Presidentes Municipales / Alcaldes.
+- Tesoreros y Directores de Finanzas Públicas.
+- Directores de Tecnologías de la Información (TI) gubernamentales.
+- Coordinadores de Atención Ciudadana.
+
+## Links Útiles
+- Página web oficial: https://sistemasintegrados.online
+- Soluciones de Tesorería: https://sistemasintegrados.online/soluciones/tesoreria-municipal
+- Contacto: https://sistemasintegrados.online/contacto

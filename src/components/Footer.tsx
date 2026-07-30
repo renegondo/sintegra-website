@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-slate-50 pt-20 pb-10 relative z-10">
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
           {/* Logo and About */}
           <div className="lg:col-span-2">
@@ -45,18 +45,6 @@ export default function Footer() {
               <li><Link href="/soluciones/integraciones" className="text-slate-500 hover:text-electric transition-colors">Integraciones</Link></li>
             </ul>
           </div>
-
-          {/* Columna Recursos */}
-          <div>
-            <h4 className="font-bold text-slate-900 mb-6">Recursos</h4>
-            <ul className="space-y-4 text-sm font-medium">
-              <li><Link href="/recursos" className="text-slate-500 hover:text-electric transition-colors">Blog</Link></li>
-              <li><Link href="/casos-de-uso" className="text-slate-500 hover:text-electric transition-colors">Casos de uso</Link></li>
-              <li><Link href="/recursos#faq" className="text-slate-500 hover:text-electric transition-colors">Preguntas frecuentes</Link></li>
-              <li><Link href="/acceso" className="text-slate-500 hover:text-electric transition-colors">Soporte y Accesos</Link></li>
-            </ul>
-          </div>
-
         </div>
 
         <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">

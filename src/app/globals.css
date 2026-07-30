@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "@tailwindcss/typography";
 :root {
   --background: #F8FAFC; /* Slate 50 */
   --foreground: #1E293B; /* Slate 800 */
