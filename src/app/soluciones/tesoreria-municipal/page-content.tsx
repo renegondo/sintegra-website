@@ -257,15 +257,15 @@ export default function TesoreriaPageContent() {
                   <div className="space-y-4">
                     <div>
                       <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">URL de Acceso</span>
-                      <a href="https://demo.sistemasintegrados.online" target="_blank" rel="noopener noreferrer" className="text-electric hover:underline font-medium">demo.sistemasintegrados.online</a>
+                      <a href="https://tesoreria.sistemasintegrados.online" target="_blank" rel="noopener noreferrer" className="text-electric hover:underline font-medium">tesoreria.sistemasintegrados.online</a>
                     </div>
                     <div>
                       <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Usuario (Admin)</span>
-                      <code className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm text-slate-700 block w-fit font-mono">admin@sintegra.com</code>
+                      <code className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm text-slate-700 block w-fit font-mono">administracion@test.com</code>
                     </div>
                     <div>
                       <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Contraseña</span>
-                      <code className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm text-slate-700 block w-fit font-mono">SintegraDemo123!</code>
+                      <code className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm text-slate-700 block w-fit font-mono">12345678</code>
                     </div>
                   </div>
                 </div>
@@ -280,15 +280,15 @@ export default function TesoreriaPageContent() {
                   <div className="space-y-4">
                     <div>
                       <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">URL de Acceso</span>
-                      <a href="https://demo.sistemasintegrados.online" target="_blank" rel="noopener noreferrer" className="text-electric hover:underline font-medium">demo.sistemasintegrados.online</a>
+                      <a href="https://tesoreria.sistemasintegrados.online" target="_blank" rel="noopener noreferrer" className="text-electric hover:underline font-medium">tesoreria.sistemasintegrados.online</a>
                     </div>
                     <div>
                       <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Usuario (Cobrador)</span>
-                      <code className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm text-slate-700 block w-fit font-mono">cobrador@sintegra.com</code>
+                      <code className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm text-slate-700 block w-fit font-mono">cobro1@test.com</code>
                     </div>
                     <div>
                       <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Contraseña</span>
-                      <code className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm text-slate-700 block w-fit font-mono">DemoCobrador123!</code>
+                      <code className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm text-slate-700 block w-fit font-mono">12345678</code>
                     </div>
                   </div>
                 </div>
