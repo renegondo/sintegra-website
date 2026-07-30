@@ -296,7 +296,7 @@ export default function Home() {
                   <div className="flex flex-col sm:flex-row gap-6 mb-8">
                     <div className="bg-black/60 p-5 rounded-2xl border border-white/5 flex-1 shadow-inner">
                       <span className="block text-xs uppercase tracking-wider text-electric font-bold mb-2">Usuario Demo</span>
-                      <strong className="font-mono text-2xl text-white">admin</strong>
+                      <strong className="font-mono text-xl sm:text-2xl text-white">administracion@test.com</strong>
                     </div>
                     <div className="bg-black/60 p-5 rounded-2xl border border-white/5 flex-1 shadow-inner">
                       <span className="block text-xs uppercase tracking-wider text-electric font-bold mb-2">Contraseña Demo</span>
@@ -307,7 +307,7 @@ export default function Home() {
 
                 <div className="w-full md:w-auto relative z-10">
                   <a 
-                    href="https://tesoreria-allstar.docploy.com/login"
+                    href="https://tesoreria.sistemasintegrados.online/login"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex flex-col items-center justify-center w-full md:w-56 h-56 rounded-3xl bg-white text-black hover:scale-105 hover:bg-gray-100 shadow-[0_0_50px_rgba(255,255,255,0.2)] transition-all duration-300 group/btn"
